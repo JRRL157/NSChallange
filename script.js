@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
      function loadData() {
         circleLayer.clearLayers();
 
-        Papa.parse('/datasets/INPE/Focos_anuais/focos_' + yearSlider.value + '_big' + '.csv', {
+        Papa.parse('/datasets/INPE/Focos/focos_' + yearSlider.value + '_big' + '.csv', {
             download: true,
             header: true, 
             complete: function(results) {                                
