@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <title>ASA: Assessing the Synergy of Atmosphere and Wildfires</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">    
+    <link href="style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+    <style>
+        
+    </style>
+</head>
+<body>
+
+    <div id="map"></div>
+
+    <div class="slider-container">
+        <div id="pomba" style="margin: 20%;">
+            <img src="img/asa_branca.png">
+        </div>
+
+        <span id="title">ASA: Assessing the Synergy of Atmosphere and Wildfires</span>
+
+        <label for="stateSelect" class="select-label">Selecione o Estado:</label>
+        <select id="stateSelect" class="form-select">
+            <option value="">Todos os Estados</option>
+            <option value="ACRE">Acre</option>
+            <option value="ALAGOAS">Alagoas</option>
+            <option value="AMAPÁ">Amapá</option>
+            <option value="AMAZONAS">Amazonas</option>
+            <option value="BAHIA">Bahia</option>
+            <option value="CEARÁ">Ceará</option>
+            <option value="DISTRITO FEDERAL">Distrito Federal</option>
+            <option value="ESPÍRITO SANTO">Espírito Santo</option>
+            <option value="GOIÁS">Goiás</option>
+            <option value="MARANHÃO">Maranhão</option>
+            <option value="MATO GROSSO">Mato Grosso</option>
+            <option value="MATO GROSSO DO SUL">Mato Grosso do Sul</option>
+            <option value="MINAS GERAIS">Minas Gerais</option>
+            <option value="PARÁ">Pará</option>
+            <option value="PARAÍBA">Paraíba</option>
+            <option value="PARANÁ">Paraná</option>
+            <option value="PERNAMBUCO">Pernambuco</option>
+            <option value="PIAUÍ">Piauí</option>
+            <option value="RIO DE JANEIRO">Rio de Janeiro</option>
+            <option value="RIO GRANDE DO NORTE">Rio Grande do Norte</option>
+            <option value="RIO GRANDE DO SUL">Rio Grande do Sul</option>
+            <option value="RONDÔNIA">Rondônia</option>
+            <option value="RORAIMA">Roraima</option>
+            <option value="SANTA CATARINA">Santa Catarina</option>
+            <option value="SÃO PAULO">São Paulo</option>
+            <option value="SERGIPE">Sergipe</option>
+            <option value="TOCANTINS">Tocantins</option>
+        </select>
+
+        <label for="yearSlider" class="slider-label">Ano:</label>
+        <input type="range" id="yearSlider" min="2015" max="2023" step="1" value="2017" class="form-range">
+        
+        <label for="monthSlider" class="slider-label">Mês:</label>
+        <input type="range" id="monthSlider" min="1" max="12" step="1" value="1" class="form-range">
+        
+        <label for="daySlider" class="slider-label">Dia:</label>
+        <input type="range" id="daySlider" min="1" max="30" step="1" value="1" class="form-range">
+        
+        <span id="selectedDate"></span>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>    
+    <script src="script2.js"></script>
+</body>
+</html>

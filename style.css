@@ -1,0 +1,59 @@
+body {
+            background-color: #f0f8ff; /* Um tom de azul suave */
+            font-family: Arial, sans-serif;
+        }
+
+        #map {
+            height: 100vh; /* Ocupa toda a altura da viewport */
+            width: calc(100% - 300px); /* Deixa espaço para a div lateral dos sliders */
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        #title {
+            font-size: xx-large;
+            font-weight: bold;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-style: normal;
+            color:rgb(24, 3, 126);
+        }
+
+        .slider-container {
+            width: 300px;
+            height: 100vh;
+            padding: 20px;
+            background-color: #e0f7fa; /* Um tom claro de azul */
+            border-left: 2px solid #00796b; /* Linha divisória */
+            position: absolute;
+            top: 0;
+            right: 0;
+            overflow-y: auto; /* Se houver muito conteúdo, torna a div rolável */
+            box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .slider-label, .select-label {
+            color: #00796b; /* Cor verde escura */
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        #selectedDate {
+            display: block;
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #004d40; /* Verde escuro */
+            text-align: center;
+        }
+
+        .form-range {
+            background: #00796b; /* Cor verde escura */
+            accent-color: #004d40; /* Cor de destaque verde escura */
+        }
+
+        h1 {
+            color: #004d40;
+            text-align: center;
+            margin: 20px;
+        }
